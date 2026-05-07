@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Game {
+public class Game { // Game class, used to create methods to play the game, and makes an instance of the board class.
     private boolean gameOn;
     private String player;
     Scanner input = new Scanner(System.in);

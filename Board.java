@@ -1,4 +1,4 @@
-public class Board {
+public class Board { // Board Class: Used to create the Connect 4 board. 
     private String[][] boardState;
     public Board(){
         boardState = new String[6][7];
@@ -46,7 +46,6 @@ public class Board {
     }
     public String checkRowWin(){
         String[] row = new String[7];
-        
         String rowOf4;
         for(int i =0; i < 6; i++){
             row = boardState[i];
