@@ -8,7 +8,7 @@ public class Main {// Used to run the game
         System.out.println();
         System.out.println();
         System.out.println();
-        System.out.println("Welcome to tic tac toe!");
+        System.out.println("Welcome to Connect 4");
         System.out.println();
         game.play();
     }
