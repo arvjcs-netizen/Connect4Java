@@ -12,10 +12,10 @@ public class Game { // Game class, used to create methods to play the game, and 
     public void getMove(){
         System.out.println(board);
         System.out.println("Player " + player + ", What column do you want to play in?");
-        int column = input.nextInt();
+        int column = input.nextInt() - 1;
         while((board.dropPiece(column, player)) == false){
             System.out.println("That move was illegal, please try again.");
-            column = input.nextInt();
+            column = input.nextInt() - 1;
         }
         System.out.println(board);
         if (player.equals("R")){
