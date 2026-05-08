@@ -112,6 +112,17 @@ public class Board { // Board Class: Used to create the Connect 4 board.
         }
         return "none";
     }
+    public boolean checkTie(){
+        for (int i = 0; i < boardState.length; i++) {
+            for(int j = 0; j < boardState[i].length; j++) {
+                if(boardState[i][j].equals("E")){
+                    return false;
+                }
+            }
+            
+        }
+        return true;
+    }
     @Override
     public String toString() {
         String result = "";

@@ -17,7 +17,6 @@ public class Game { // Game class, used to create methods to play the game, and 
             System.out.println("That move was illegal, please try again.");
             column = input.nextInt() - 1;
         }
-        System.out.println(board);
         if (player.equals("R")){
             player = "Y";
         }else{
@@ -28,6 +27,9 @@ public class Game { // Game class, used to create methods to play the game, and 
         if(!(board.checkBoard().equals("none"))){
             System.out.println("Player " + board.checkBoard() + " Has won the game!");
             gameOn = false;
+        }else if(board.checkTie() == true){
+            System.out.println("The game has ended in a tie!");
+            gameOn = false; 
         }
     }
     public void reset(){
